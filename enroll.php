@@ -19,6 +19,7 @@ $course=$_POST['course'];
 $sem=$_POST['sem'];
 $ret=mysqli_query($con,"insert into courseenrolls(studentRegno, ,session,department,level,course,semester) values('$studentregno','$pincode','$session','$dept','$level','$course','$sem')");
 if($ret)
+
 {
   
 echo '<script>alert("Enroll Successfully !!")</script>';
